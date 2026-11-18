@@ -1,0 +1,33 @@
+{
+  "auto_schedule": true,
+  "auto_maintain": true,
+  "feeds": [
+    "https://blogs.windows.com/feed/",
+    "https://blog.cloudflare.com/rss/",
+    "https://blog.google/technology/ai/rss/",
+    "https://blogs.nvidia.com/feed/"
+  ],
+  "source_hosts": [
+    "blogs.windows.com",
+    "blog.cloudflare.com",
+    "blog.google",
+    "blogs.nvidia.com"
+  ],
+  "limits": {
+    "groq": {
+      "requests": 40,
+      "tokens": 180000,
+      "images": 0
+    },
+    "gemini": {
+      "requests": 30,
+      "tokens": 200000,
+      "images": 0
+    },
+    "cloudflare": {
+      "requests": 12,
+      "tokens": 0,
+      "images": 12
+    }
+  }
+}
